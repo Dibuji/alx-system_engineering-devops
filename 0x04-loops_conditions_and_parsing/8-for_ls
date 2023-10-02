@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Bash script that displays content of current directory in list format excluding hidden files and the first '-' in the name
+
+for file in *; do
+	if [[ ! "$file" == .* && "$file" == *-* ]]; then
+		name_after_dash="${file#*-}"
+
+		echo "$name_after_dash"
+	fi
+done

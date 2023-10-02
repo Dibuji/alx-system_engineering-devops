@@ -2,7 +2,7 @@
 # This script uses a while loop to print a text
 counter=0
 
-while [ $counter -lt 10 ]
+while [ "$counter" -lt 10 ]
 do
     echo "Best School"
     ((counter++))
