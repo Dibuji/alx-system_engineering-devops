@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# This bash script used the until loop to print Best school 10 times
-
-count=0
-
-until [ "$count" -ge 10 ]; do
-	echo "Best School"
-	((count++))
-done
